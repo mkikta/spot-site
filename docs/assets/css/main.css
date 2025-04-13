@@ -1699,3 +1699,23 @@ input, select, textarea {
     color: #ffffff; /* Change text color if needed */
     font-size: 0.9rem; /* Adjust font size as needed */
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center; /* Center images */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .image-item {
+        width: 100%; /* Make each image item take full width */
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    .small-image {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure images cover the area without distortion */
+    }
+}
