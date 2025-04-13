@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,43 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+#footer a {
+    color: #ffffff; /* Change the text color to white */
+    text-decoration: none !important; /* Remove the underline, using !important to override other styles */
+    margin: 0 15px; /* Add horizontal spacing between links */
+    transition: color 0.2s; /* Add a transition for hover effect */
+}
+
+#footer a:hover {
+    color: #f0f0f0; /* Change color on hover for better visibility */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.small-image {
+    width: 160px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between images */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    transition: transform 0.2s; /* Add a transition for hover effect */
+}
+
+.small-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.image-item {
+    text-align: center; /* Center the text under each image */
+}
+
+.image-item p {
+    margin-top: 5px; /* Add some space between the image and the text */
+    color: #ffffff; /* Change text color if needed */
+    font-size: 0.9rem; /* Adjust font size as needed */
+}
