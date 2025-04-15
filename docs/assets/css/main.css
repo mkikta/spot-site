@@ -1727,19 +1727,3 @@ input, select, textarea {
         object-fit: cover; /* Ensure images cover the area without distortion */
     }
 }
-
-@media (max-width: 768px) {
-    #email-conf {
-        max-width: 90%; /* Limit the width to 90% of the viewport */
-        margin: 0 auto; /* Center the element */
-        padding: 1rem; /* Add some padding for better spacing */
-    }
-
-    #email-conf h2 {
-        font-size: 1.5rem; /* Adjust font size for mobile */
-    }
-
-    #email-conf p {
-        font-size: 1rem; /* Adjust font size for mobile */
-    }
-}
