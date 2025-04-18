@@ -1,7 +1,12 @@
 RewriteEngine On
 
+# Set correct MIME type for apple-app-site-association
+<Files "apple-app-site-association.json">
+    ForceType application/json
+</Files>
+
 # Skip rewriting for apple-app-site-association
-RewriteRule ^\.well-known/apple-app-site-association$ - [L]
+RewriteRule ^\.well-known/apple-app-site-association\.json$ - [L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html !-f
