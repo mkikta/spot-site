@@ -1,7 +1,8 @@
 RewriteEngine On
 
+# Skip rewriting for apple-app-site-association
+RewriteRule ^\.well-known/apple-app-site-association$ - [L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
+RewriteCond %{REQUEST_FILENAME}.html !-f
 RewriteRule ^(.*)$ $1.html [NC,L]
