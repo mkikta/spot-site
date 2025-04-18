@@ -1,6 +1,1 @@
-include:
-  - ".well-known"
-exclude:
-  - .DS_Store
-  - README.md
-  - docs
+include: [".well-known"]
